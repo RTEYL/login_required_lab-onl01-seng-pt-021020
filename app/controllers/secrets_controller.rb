@@ -1,8 +1,8 @@
 class SecretsController < ApplicationController
   before_action :secret
-  
+
   def method_name
-    
+
   end
 
   private
@@ -12,7 +12,7 @@ class SecretsController < ApplicationController
       redirect_to '/login'
     else
       render 'secrets/show'
-    end    
+    end
   end
-  
+
 end
