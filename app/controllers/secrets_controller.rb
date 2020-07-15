@@ -8,7 +8,7 @@ class SecretsController < ApplicationController
   private
 
   def secret
-    if !session[:name] || session[:name].empty?
+    if session[:name].nil? || session[:name].empty?
       redirect_to '/login'
     else
       render 'secrets/show'
